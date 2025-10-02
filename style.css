@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    color: #343a40; 
+    line-height: 1.6;
+    scroll-behavior: smooth; 
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+header {
+    background-color: #212529;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.cargo {
+    font-size: 1.2em;
+    color: #adb5bd;
+}
+
+.secao {
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); 
+    
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.secao.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.secao h2 {
+    color: #007bff; 
+    font-size: 2em;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.secao h2::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.item-info {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.habilidades-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.habilidades-lista span {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #dee2e6;
+}
+
+.link-projeto {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+    border-bottom: 2px dotted #007bff;
+    transition: color 0.3s;
+}
+
+.link-projeto:hover {
+    color: #0056b3;
+    border-bottom-style: solid;
+}
+
+.links-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-contato {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.botao-contato:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #343a40;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .secao {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .links-contato {
+        justify-content: center;
+    }
+}
