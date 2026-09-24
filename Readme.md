@@ -23,6 +23,6 @@ script.js
 Funcionalidade e animação de rolagem.
 
 Links
-Linked:Pedro Dagneze
+LinkedIn:Pedro Dagneze
 GitHub:Perfil Principal
 E-mail:p.dagneze@gmail.com
